@@ -12,11 +12,11 @@
         const $this = this;
 
         let $current = null;
-        let anchorX = 0;
+        let anchorY = 0;
 
         $this.addClass("swivel").mousedown(function (event) {
             $current = $(this);
-            anchorX = event.screenX - ($current.data('swivel-angle') || 0);
+            anchorY = event.screenY - ($current.data('swivel-angle') || 0);
         });
 
         // Other mouse events go at the level of the document because
@@ -24,7 +24,7 @@
         $(document).mousemove(event => {
             if ($current) {
                 const currentAngle = $current.data('swivel-angle') || 0;
-                const newAngle = event.screenX - anchorX;
+                const newAngle = event.screenY - anchorY;
                 const newCss = "perspective(500px) rotateY(" + newAngle + "deg)";
 
                 $current.css({
