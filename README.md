@@ -54,3 +54,4 @@ Programming assignments are scored according to outcomes _3a_, _3b_, and _4a_ to
 | **Total** | **100** |
 
 “Deduction only” categories mean that you will only get points taken off if there are significant issues with those categories (or, in the case of third-party library use, the very presence of inappropriate third-party library code). Such issues include but are not limited to: lingering linting errors as of the final commit (_4c_), insufficiently granular or unmessaged commits (_4e_), and late commits (_4f_).
+# ReusableComponent
